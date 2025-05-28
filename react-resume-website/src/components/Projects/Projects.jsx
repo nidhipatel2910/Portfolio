@@ -8,8 +8,8 @@ const projects = [
     description: "A personal portfolio website to showcase my projects and skills.",
     image: "/assets/project1.png",
     links: [
-      { label: "GitHub", url: "https://github.com/yourusername/portfolio" },
-      { label: "Live Demo", url: "https://yourportfolio.com" }
+      { label: "GitHub", url: "https://github.com/nidhipatel2910/Portfolio" },
+      { }
     ]
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description: "A full-stack task manager app with user authentication and CRUD features.",
     image: "/assets/project2.png",
     links: [
-      { label: "GitHub", url: "https://github.com/yourusername/task-manager" }
+      { label: "GitHub", url: "https://github.com/nidhipatel2910/task_mng" }
     ]
   },
   {
