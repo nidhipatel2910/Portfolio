@@ -1,0 +1,168 @@
+/* src/App.module.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #12002f;
+  --bg-gradient: linear-gradient(135deg, #2a004f 0%, #000000 100%);
+  --primary-purple: #b16cea;
+  --accent-pink: #ff6bcb;
+  --text-white: #f4f4f4;
+  --text-light: #e0e0e0;
+  --card-bg: rgba(34, 0, 51, 0.85);
+  --nav-bg: #1a0033;
+  --button-bg: #b16cea;
+  --button-hover: #ff6bcb;
+}
+
+.appContainer {
+  background: var(--bg-gradient);
+  color: var(--text-white);
+}
+
+
+.app {
+  min-height: 100vh;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-white);
+  padding-bottom: 40px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #232526;
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6 {
+  color: #232526; /* Dark color for headings in light mode */
+}
+
+.light .navbar {
+  background: #fff;           /* White navbar for light mode */
+  color: #232526;             /* Dark text for contrast */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.dark {
+  background: var(--bg-gradient);
+  color: var(--text-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--primary-purple);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 span, h2 span, h3 span {
+  color: var(--accent-pink);
+}
+
+p, li, a, span {
+  font-size: 1.1rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.toggleBtn {
+  margin: 2rem auto;
+  display: block;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.toggleBtn:hover {
+  background: #0097a7;
+}
+
+/* Add below your existing styles */
+.card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  padding: 2rem;
+  margin: 1rem;
+  color: var(--text-light);
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(177, 108, 234, 0.3);
+}
+
+.toggleBtn, .btn-primary {
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.toggleBtn:hover, .btn-primary:hover {
+  background: var(--button-hover);
+}
+
+.stars {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /* background: transparent url('/assets/stars.png') repeat;*/
+  opacity: 0.2;
+}
+/*.navbar {
+  background: var(--nav-bg);
+  color: var(--text-white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 1rem 2rem;
+  border-radius: 0 0 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Increased to ensure navbar stays on top */
+
+
+.light .navbar {
+  background: #fff;
+  color: #232526;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}

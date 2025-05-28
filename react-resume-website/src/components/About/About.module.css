@@ -1,0 +1,131 @@
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profileImg {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 24px 0 rgba(80, 60, 160, 0.12);
+  background: #241e38;
+}
+
+.aboutText {
+  flex: 1 1 300px;
+  color: #e0e0e0;
+  min-width: 260px;
+  max-width: 600px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a084e8;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  min-height: 340px;
+  flex-wrap: wrap;
+}
+
+.heroText {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 260px;
+  max-width: 600px;
+}
+
+.greeting {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg);}
+  10% { transform: rotate(14deg);}
+  20% { transform: rotate(-8deg);}
+  30% { transform: rotate(14deg);}
+  40% { transform: rotate(-4deg);}
+  50% { transform: rotate(10deg);}
+  60% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.highlight {
+  color: #a084e8;
+  letter-spacing: 1px;
+}
+
+.typing {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #a084e8;
+  margin-bottom: 1.5rem;
+}
+
+.heroImage {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px;
+}
+
+.heroImage img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .aboutText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .heroImage {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,94 @@
+.skills {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+}
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a084e8;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.skillsGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.skillCard {
+  background: rgba(40, 30, 70, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(80, 60, 160, 0.12);
+  min-width: 220px;
+  max-width: 300px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+  overflow: hidden;
+}
+.cardHeader {
+  background: none;
+  border: none;
+  color: #a084e8;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  width: 100%;
+  transition: background 0.2s;
+}
+.cardHeader:hover {
+  background: rgba(160, 132, 232, 0.08);
+}
+.arrowDown {
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+.arrowUp {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+.cardContent {
+  background: transparent;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1);
+  max-height: 0;
+  padding: 0 1.5rem;
+}
+.cardContent.open {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+.cardContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cardContent li {
+  color: #e0e0e0;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  padding-left: 0.5rem;
+  position: relative;
+}
+.cardContent li:before {
+  content: '•';
+  color: #a084e8;
+  margin-right: 0.5rem;
+}
+@media (max-width: 900px) {
+  .skillsGrid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

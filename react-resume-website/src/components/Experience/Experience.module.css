@@ -1,0 +1,108 @@
+.experienceCard {
+  background: rgba(40, 30, 70, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(80, 60, 160, 0.12);
+  padding: 2rem 2.5rem;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.experienceCard:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px 0 rgba(160, 132, 232, 0.18);
+}
+
+.light .experienceCard {
+  background: #fff;
+  color: #232526;
+  box-shadow: 0 4px 24px rgba(177, 108, 234, 0.08);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a084e8;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.experienceGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experienceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.expItem {
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.role {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 1rem;
+  color: #a084e8;
+  margin-bottom: 0.2rem;
+}
+
+.period {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  margin-top: 0.5rem;
+}
+
+.details {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.details li {
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  color: #e0e0e0;
+  margin-top: 0.7rem;
+  font-size: 0.98rem;
+}
